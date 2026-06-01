@@ -76,8 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // 5. Hero Canvas Scrubber
   const canvas = document.getElementById('hero-canvas');
   const ctx = canvas.getContext('2d');
-  const frameCount = 30; // We generated 30 frames
-  const currentFrame = index => `/public/frames/frame_${(index + 1).toString().padStart(3, '0')}.svg`;
+  const frameCount = 120;
+  const currentFrame = index => `/frames/frame_${String(index + 1).padStart(3, '0')}.svg`;
   
   // Update canvas size
   function resizeCanvas() {
