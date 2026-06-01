@@ -130,6 +130,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Fade out text early on scroll
+  gsap.to('.hero-content', {
+    opacity: 0,
+    y: -50,
+    scrollTrigger: {
+      trigger: '#hero',
+      start: 'top top',
+      end: '+=50%',
+      scrub: 1
+    }
+  });
+
   // 6. Horizontal Scroll for Craft Process
   const processTrack = document.querySelector('.process-track');
   
