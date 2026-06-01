@@ -79,16 +79,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const frameCount = 120;
   const currentFrame = index => `/frames/frame_${String(index + 1).padStart(3, '0')}.svg`;
   
+  let currentFrameIndex = 0;
+
   // Update canvas size
   function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    render();
+    render(currentFrameIndex);
   }
   window.addEventListener('resize', resizeCanvas);
 
   const images = [];
-  const imageSeq = { frame: 0 };
 
   // Preload images
   for (let i = 0; i < frameCount; i++) {
@@ -102,9 +103,9 @@ document.addEventListener('DOMContentLoaded', () => {
     resizeCanvas();
   };
 
-  function render() {
+  function render(frameIndex) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    const img = images[imageSeq.frame];
+    const img = images[frameIndex];
     if(img) {
       // Draw centered, covering canvas
       const scale = Math.max(canvas.width / img.width, canvas.height / img.height);
@@ -114,17 +115,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  gsap.to(imageSeq, {
-    frame: frameCount - 1,
-    snap: 'frame',
-    ease: 'none',
-    scrollTrigger: {
-      trigger: '#hero',
-      start: 'top top',
-      end: 'bottom bottom',
-      scrub: 0.5,
-    },
-    onUpdate: render
+  ScrollTrigger.create({
+    trigger: "#hero",
+    start: "top top",
+    end: "+=300%",
+    pin: true,
+    scrub: 1,
+    onUpdate: (self) => {
+      currentFrameIndex = Math.min(
+        frameCount - 1,
+        Math.floor(self.progress * frameCount)
+      );
+      render(currentFrameIndex);
+    }
   });
 
   // 6. Horizontal Scroll for Craft Process
