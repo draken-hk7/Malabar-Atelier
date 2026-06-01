@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Malabar Atelier | Premium Kerala Handcrafts</title>
+    <meta name="description" content="Authentic Kerala artisan pieces — from our hands to your world. Handmade Kerala gifts, Nettipattam, elephant headgear, and craft bags." />
+    <meta name="keywords" content="Kerala handicrafts, Nettipattam, handmade Kerala gifts, elephant headgear, luxury crafts, artisan" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div id="loader">
+      <div class="loader-content">
+        <h1 class="loader-logo">Malabar Atelier</h1>
+      </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">Malabar Atelier</div>
+        <div class="nav-links desktop-nav">
+          <a href="#hero">Home</a>
+          <a href="#shop">Shop</a>
+          <a href="#about">Story</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <a href="https://wa.me/+910000000000?text=Hi!%20I%27m%20interested%20in%20your%20products" target="_blank" class="nav-cta desktop-nav">WhatsApp</a>
+        <div class="hamburger mobile-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!-- Mobile Menu Overlay -->
+      <div class="mobile-menu">
+        <div class="mobile-links">
+          <a href="#hero">Home</a>
+          <a href="#shop">Shop</a>
+          <a href="#about">Story</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main-content">
+      <!-- 1. HERO -->
+      <section id="hero" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-content">
+          <h1>Crafted by Hand.<br/>Blessed by Tradition.</h1>
+          <p>Authentic Kerala artisan pieces &mdash; from our hands to your world.</p>
+          <button class="primary-cta" onclick="document.getElementById('shop').scrollIntoView({behavior: 'smooth'})">Explore Collection</button>
+        </div>
+      </section>
+
+      <!-- 2. MARQUEE STRIP -->
+      <div class="marquee-container">
+        <div class="marquee-content">
+          <span>Handmade in Kerala &bull; Nettipattam &bull; Craft Bags &bull; Artisan Gifting &bull; Heritage Crafts &bull; Ships Worldwide &bull;</span>
+          <span>Handmade in Kerala &bull; Nettipattam &bull; Craft Bags &bull; Artisan Gifting &bull; Heritage Crafts &bull; Ships Worldwide &bull;</span>
+        </div>
+      </div>
+
+      <!-- 3. PRODUCTS / SHOP -->
+      <section id="shop" class="shop section-padding">
+        <h2 class="section-title">Our Collections</h2>
+        <div class="product-grid">
+          <!-- Product Card 1 -->
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="https://images.unsplash.com/photo-1610014022646-0b1a03fb4b37?w=800&q=80" alt="Royal Nettipattam" />
+            </div>
+            <div class="product-info">
+              <h3>Royal Nettipattam</h3>
+              <p>Gold-plated elephant headgear</p>
+              <span class="price">₹12,500</span>
+              <a href="https://wa.me/+910000000000?text=Hi!%20I%27m%20interested%20in%20Royal%20Nettipattam" target="_blank" class="buy-btn">Order on WhatsApp</a>
+            </div>
+          </div>
+          <!-- Product Card 2 -->
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="https://images.unsplash.com/photo-1590736969955-71cc94801759?w=800&q=80" alt="Handwoven Craft Bag" />
+            </div>
+            <div class="product-info">
+              <h3>Palakkad Craft Bag</h3>
+              <p>Natural fiber handwoven tote</p>
+              <span class="price">₹2,800</span>
+              <a href="https://wa.me/+910000000000?text=Hi!%20I%27m%20interested%20in%20Palakkad%20Craft%20Bag" target="_blank" class="buy-btn">Order on WhatsApp</a>
+            </div>
+          </div>
+          <!-- Product Card 3 -->
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?w=800&q=80" alt="Artisan Gift Set" />
+            </div>
+            <div class="product-info">
+              <h3>Heritage Gift Set</h3>
+              <p>Curated traditional Kerala artifacts</p>
+              <span class="price">₹5,400</span>
+              <a href="https://wa.me/+910000000000?text=Hi!%20I%27m%20interested%20in%20Heritage%20Gift%20Set" target="_blank" class="buy-btn">Order on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. ABOUT US / STORY -->
+      <section id="about" class="about">
+        <div class="about-image parallax-bg"></div>
+        <div class="about-text">
+          <h2 class="section-title">Our Heritage</h2>
+          <p class="story-highlight">"Every stitch carries a story. Every piece is a prayer."</p>
+          <p>Rooted in the lush landscapes of Kerala, Malabar Atelier preserves the fading art forms of our ancestors. From the magnificent Nettipattam that adorns our temple elephants to the delicate fibers of our craft bags, each creation is a testament to generations of artisan devotion.</p>
+        </div>
+      </section>
+
+      <!-- 5. CRAFT PROCESS -->
+      <section id="process" class="process section-padding">
+        <h2 class="section-title text-center">The Making Process</h2>
+        <p class="text-center process-sub">From raw material to royal finish.</p>
+        <div class="process-wrapper">
+          <div class="process-track">
+            <div class="process-step">
+              <div class="step-num">01</div>
+              <h3>Sourcing</h3>
+              <p>Hand-picking the finest raw materials from local Kerala farmers.</p>
+            </div>
+            <div class="process-step">
+              <div class="step-num">02</div>
+              <h3>Weaving</h3>
+              <p>Master artisans employ age-old techniques to create the base structure.</p>
+            </div>
+            <div class="process-step">
+              <div class="step-num">03</div>
+              <h3>Detailing</h3>
+              <p>Intricate gold plating and precise embellishments are applied by hand.</p>
+            </div>
+            <div class="process-step">
+              <div class="step-num">04</div>
+              <h3>Finishing</h3>
+              <p>A rigorous quality check ensures the piece holds our royal standard.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. GALLERY / LOOKBOOK -->
+      <section id="gallery" class="gallery section-padding">
+        <h2 class="section-title text-center">Lookbook</h2>
+        <div class="masonry-grid">
+          <!-- Placeholder divs styled via CSS -->
+          <div class="masonry-item c-gold"></div>
+          <div class="masonry-item c-crimson tall"></div>
+          <div class="masonry-item c-ebony"></div>
+          <div class="masonry-item c-gold tall"></div>
+          <div class="masonry-item c-ivory"></div>
+          <div class="masonry-item c-crimson"></div>
+        </div>
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+          <span class="lightbox-close">&times;</span>
+          <div class="lightbox-content"></div>
+        </div>
+      </section>
+
+      <!-- 7. TESTIMONIALS -->
+      <section id="testimonials" class="testimonials section-padding">
+        <h2 class="section-title text-center text-ivory">Voices of Patronage</h2>
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <div class="testimonial-card">
+              <div class="quote-mark">"</div>
+              <p>The Nettipattam I received is absolutely stunning. The craftsmanship brings a piece of Kerala straight to my living room.</p>
+              <h4>- Anjali M.</h4>
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+            <div class="testimonial-card">
+              <div class="quote-mark">"</div>
+              <p>Premium quality craft bags. The detail and attention to tradition is what makes Malabar Atelier stand out.</p>
+              <h4>- Rohan K.</h4>
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+            <div class="testimonial-card">
+              <div class="quote-mark">"</div>
+              <p>A true luxury experience. Unwrapping the heritage gift set was a joy. Fast international shipping too.</p>
+              <h4>- Sarah V.</h4>
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. CUSTOM ORDERS CTA -->
+      <section id="custom-orders" class="custom-orders">
+        <div class="custom-content">
+          <h2>Want something made just for you?</h2>
+          <a href="https://wa.me/+910000000000?text=Hi!%20I%20would%20like%20to%20discuss%20a%20custom%20order" target="_blank" class="secondary-cta">Enquire on WhatsApp</a>
+        </div>
+      </section>
+
+      <!-- 9. FAQ -->
+      <section id="faq" class="faq section-padding">
+        <h2 class="section-title text-center">Frequently Asked Questions</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">Do you ship worldwide? <span class="icon">+</span></button>
+            <div class="accordion-content">
+              <p>Yes, we ship globally. All international orders are carefully packaged to ensure they reach you in pristine condition.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">How are the Nettipattams made? <span class="icon">+</span></button>
+            <div class="accordion-content">
+              <p>Each piece is handcrafted by generational artisans in Kerala using traditional materials and techniques. It takes several days to complete a single piece.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Can I request a custom design? <span class="icon">+</span></button>
+            <div class="accordion-content">
+              <p>Absolutely. We take bespoke requests for specific sizes, colors, and designs. Contact us on WhatsApp to discuss your vision.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">How should I care for my craft bag? <span class="icon">+</span></button>
+            <div class="accordion-content">
+              <p>Keep it away from prolonged direct sunlight and moisture. Wipe gently with a soft, dry cloth.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 10. FOOTER -->
+    <footer class="footer">
+      <div class="footer-pattern"></div>
+      <div class="footer-content">
+        <div class="footer-col brand-col">
+          <h3>Malabar Atelier</h3>
+          <p>Blessed by Tradition.</p>
+          <div class="social-icons">
+            <a href="#">IG</a>
+            <a href="#">FB</a>
+            <a href="#">YT</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="#hero">Home</a>
+          <a href="#shop">Shop</a>
+          <a href="#about">Story</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#faq">FAQ</a>
+          <a href="https://wa.me/+910000000000" target="_blank">Contact Us</a>
+        </div>
+        <div class="footer-col newsletter-col">
+          <h4>Newsletter</h4>
+          <form class="newsletter-form" onsubmit="event.preventDefault()">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Malabar Atelier. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Global Floating WhatsApp Desktop -->
+    <a href="https://wa.me/+910000000000?text=Hi!%20I%27m%20interested%20in%20your%20products" target="_blank" class="floating-wa desktop-only">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- Mobile-Only Sticky WhatsApp CTA Bar -->
+    <a href="https://wa.me/+910000000000?text=Hi!%20I%27m%20interested%20in%20your%20products" target="_blank" class="mobile-sticky-cta mobile-only">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+      Order on WhatsApp
+    </a>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
