@@ -144,21 +144,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const processTrack = document.querySelector('.process-track');
   
   // Only apply horizontal scroll on desktop
-  ScrollTrigger.matchMedia({
-    "(min-width: 769px)": function() {
-      gsap.to(processTrack, {
-        x: () => -(processTrack.scrollWidth - window.innerWidth + 100), // padding offset
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".process",
-          start: "top center",
-          end: () => "+=" + (processTrack.scrollWidth - window.innerWidth),
-          scrub: 1,
-          pin: true,
-          anticipatePin: 1
-        }
-      });
-    }
+  let mm = gsap.matchMedia();
+  mm.add("(min-width: 769px)", () => {
+    gsap.to(processTrack, {
+      x: () => -(processTrack.scrollWidth - window.innerWidth + 100), // padding offset
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".process",
+        start: "top center",
+        end: () => "+=" + (processTrack.scrollWidth - window.innerWidth),
+        scrub: 1,
+        pin: true,
+        anticipatePin: 1
+      }
+    });
   });
 
   // 7. Lightbox for Gallery
