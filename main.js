@@ -115,32 +115,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  ScrollTrigger.create({
-    trigger: "#hero",
-    start: "top top",
-    end: "+=300%",
-    pin: true,
-    scrub: 1,
-    onUpdate: (self) => {
-      currentFrameIndex = Math.min(
-        frameCount - 1,
-        Math.floor(self.progress * frameCount)
-      );
-      render(currentFrameIndex);
+  const heroTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#hero",
+      start: "top top",
+      end: "+=300%",
+      pin: true,
+      scrub: 1,
+      onUpdate: (self) => {
+        currentFrameIndex = Math.min(
+          frameCount - 1,
+          Math.floor(self.progress * frameCount)
+        );
+        render(currentFrameIndex);
+      }
     }
   });
 
   // Fade out text early on scroll
-  gsap.to('.hero-content', {
+  heroTl.to('.hero-content', {
     opacity: 0,
-    y: -50,
-    scrollTrigger: {
-      trigger: '#hero',
-      start: 'top top',
-      end: '+=50%',
-      scrub: 1
-    }
-  });
+    yPercent: -20, // Moves up relative to its own height, avoiding transform conflicts
+    duration: 0.15 // Finishes fading in the first 15% of the scroll
+  })
+  .to({}, { duration: 0.85 }); // Pad timeline so the scrub maps correctly
 
   // 6. Horizontal Scroll for Craft Process
   const processTrack = document.querySelector('.process-track');
