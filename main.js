@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const canvas = document.getElementById('hero-canvas');
   const ctx = canvas.getContext('2d');
   const frameCount = 120;
-  const currentFrame = index => `/frames/frame_${String(index + 1).padStart(3, '0')}.svg`;
+  const currentFrame = index => `${import.meta.env.BASE_URL}frames/frame_${String(index + 1).padStart(3, '0')}.svg`;
   
   let currentFrameIndex = 0;
 
